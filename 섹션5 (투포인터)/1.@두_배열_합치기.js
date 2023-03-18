@@ -12,18 +12,15 @@
 function solution(a, b) {
   let answer = [];
 
-  let aLength = a.length;
-  let bLength = b.length;
-
   let p1 = (p2 = 0);
 
-  while (p1 < aLength && p2 < bLength) {
-    if (a[p1] <= a[p2]) answer.push(a[p1++]);
-    else answer.push(a[p2]);
+  while (p1 < a.length && p2 < b.length) {
+    if (a[p1] <= b[p2]) answer.push(a[p1++]);
+    else answer.push(b[p2++]);
   }
 
-  while (p1 < aLength) answer.push(a[p1]);
-  while (p2 < bLength) answer.push(a[p2]);
+  while (p1 < a.length) answer.push(a[p1++]);
+  while (p2 < b.length) answer.push(b[p2++]);
 
   return answer;
 }
