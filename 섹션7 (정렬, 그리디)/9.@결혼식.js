@@ -23,6 +23,8 @@ function solution(times) {
   return answer;
 }
 
+let a = 3;
+console.info('3', a.__proto__);
 let arr = [
   [14, 18],
   [12, 15],
