@@ -13,19 +13,37 @@
 // console.log(solution(students));
 
 //
+// function solution(students) {
+//   let answer = 0;
+//   let min = students[0];
+
+//   for (let x of students) {
+//     if (x > min) {
+//       answer++;
+//     }
+//     min = x;
+//   }
+
+//   return answer;
+// }
+
+// let students = [130, 135, 148, 140, 145, 150, 150, 153];
+// console.log(solution(students));
+
+// @ 다시 풀기
 function solution(students) {
-  let answer = 0;
-  let min = students[0];
+  let count = 0;
+  let max = Number.MIN_SAFE_INTEGER;
 
   for (let x of students) {
-    if (x > min) {
-      answer++;
+    if (x > max) {
+      max = x;
+      count++;
     }
-    min = x;
   }
 
-  return answer;
+  return count;
 }
 
 let students = [130, 135, 148, 140, 145, 150, 150, 153];
-console.log(solution(students));
+console.log(solution(students)); // 5
