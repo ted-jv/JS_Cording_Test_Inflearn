@@ -1,10 +1,10 @@
 // 내 처음 풀이법
 function solution(arr,n) {
-  let answer = 0;
+  let count = 0;
     for(let i=0; i<n; i++{
         f
     })
-  return answer;
+  return count;
 }
 
 let n = 5;
@@ -16,3 +16,4 @@ let arr = [
   [8, 7, 3, 5, 2],
 ];
 console.log(solution(arr,n));
+
