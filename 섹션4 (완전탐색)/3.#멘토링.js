@@ -1,7 +1,8 @@
 // 내 처음 풀이법
 function solution(test) {
   let answer = 0;
-
+  let answer
+  
   return answer;
 }
 
